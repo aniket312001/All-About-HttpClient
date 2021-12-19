@@ -1,0 +1,20 @@
+<p>new-api works!</p>
+<div *ngFor="let i of alldata">
+    {{i.id}} --- {{i.name}} --- {{i.category}}
+    <button (click)="edit(i.id)">Update</button>
+    <button (click)="delete(i.id)">delete</button>
+    <br>
+</div>
+
+<br>
+<br>
+<h1>Post</h1>
+<p *ngIf="datasaved">Data has been Saved</p>
+<form action="" [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+    <input type="text" name="id" id="" formControlName="id" placeholder="ID">
+    <input type="text" name="nm" id="" formControlName="name" placeholder="Name">
+    <input type="text" name="cat" id="" formControlName="category" placeholder="category">
+
+    <input type="submit" value="Submit" [disabled]="bookForm.invalid">
+
+</form>

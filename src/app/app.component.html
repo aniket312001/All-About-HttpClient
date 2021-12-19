@@ -1,0 +1,19 @@
+<h1>Static Data</h1>
+<div *ngFor="let book of allBooks">
+    {{book.name}}
+</div>
+
+<h1>Online Data</h1>
+<div *ngFor="let u of allUser">
+    <a routerLink="user/{{u.id}}">{{u.name}}</a>
+</div>
+
+
+
+<app-async-pipe></app-async-pipe>
+
+
+<br>
+<br>
+<br>
+<router-outlet></router-outlet>

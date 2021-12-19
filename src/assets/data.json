@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "name":"harry potter",
+        "price":500,
+        "category":"mistery"
+    },
+    {
+        "id":2,
+        "name":"One Piece",
+        "price":1500,
+        "category":"anime"
+    },
+    {
+        "id":1,
+        "name":"titanic",
+        "price":200,
+        "category":"romantic"
+    }
+]

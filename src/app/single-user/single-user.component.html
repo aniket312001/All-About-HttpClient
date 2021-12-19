@@ -1,0 +1,9 @@
+<p>single-user works!</p>
+<div *ngIf="user; else block">
+
+    {{user| json}}
+</div>
+
+<ng-template #block>
+    Oops we dont have data
+</ng-template>
